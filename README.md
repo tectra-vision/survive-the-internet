@@ -36,12 +36,13 @@ Please report the false-attribution budget your `detect()` is calibrated to, plu
 
 | System | Identified (evaluation + platform sets) | False positives | PSNR |
 |---|---|---|---|
-| Tectra v2 | see tectra.vision/benchmarks | 0 | 37.3 dB |
+| Tectra v2.3 (sealed holdout-v1) | 128/130 (98.5%) | 0 | 39.0 dB (VMAF 82.2) |
+| Tectra v2.2 (sealed holdout-v1) | 124/130 (95.4%) | 0 | 37.0 dB (VMAF 75.2) |
 | Meta Video Seal v1.0 (default strength) | 36/50 on 5 clips × 10 pipelines | 0 | 42.2 dB |
 
 ## Known issue in holdout-v1
 
-one sealed-test clip (“Borneo wildlife”) turned out to be a duplicate upload of a development clip (“Birds over river”) on Wikimedia Commons; our fingerprint index found it. Excluding it, the v2.2 sealed result is 114/120 (95.0%). Holdout v2 will exclude near-duplicates automatically.
+one sealed-test clip (“Borneo wildlife”) turned out to be a duplicate upload of a development clip (“Birds over river”) on Wikimedia Commons; our fingerprint index found it. Excluding it, the sealed result is 118/120 (98.3%) for v2.3 and 114/120 (95.0%) for v2.2. Holdout v2 will exclude near-duplicates automatically.
 
 ## Limits
 

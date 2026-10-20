@@ -1,0 +1,270 @@
+{
+ "set": "holdout-v1",
+ "release": "v2.3 (informed embedding + multi-alignment detection + 9:16 self-test)",
+ "identified": 128,
+ "total": 130,
+ "wrong_attributions": 0,
+ "false_positives": 0,
+ "mean_psnr": 39.01,
+ "mean_vmaf": 82.24,
+ "strength_mix": {
+  "1.5": 8,
+  "1.75": 1,
+  "2.5": 3,
+  "3.0": 1
+ },
+ "per_clip": {
+  "borneo_wildlife.mp4": {
+   "strength": 1.5,
+   "identified": 10,
+   "control": "clean",
+   "psnr": 34.4,
+   "vmaf": 83.31,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "ok",
+    "screenrec": "ok",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  },
+  "cogvideox_swans.mp4": {
+   "strength": 1.5,
+   "identified": 10,
+   "control": "clean",
+   "psnr": 43.52,
+   "vmaf": 90.16,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "ok",
+    "screenrec": "ok",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  },
+  "dog_popcorn_vertical.mp4": {
+   "strength": 1.75,
+   "identified": 9,
+   "control": "clean",
+   "psnr": 38.46,
+   "vmaf": NaN,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "MISS",
+    "screenrec": "ok",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  },
+  "octopus_crab.mp4": {
+   "strength": 1.5,
+   "identified": 10,
+   "control": "clean",
+   "psnr": 38.41,
+   "vmaf": 88.33,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "ok",
+    "screenrec": "ok",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  },
+  "photoreal_train.mp4": {
+   "strength": 2.5,
+   "identified": 10,
+   "control": "clean",
+   "psnr": 33.83,
+   "vmaf": 61.37,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "ok",
+    "screenrec": "ok",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  },
+  "pigeon_vertical.mp4": {
+   "strength": 1.5,
+   "identified": 10,
+   "control": "clean",
+   "psnr": 37.45,
+   "vmaf": 83.16,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "ok",
+    "screenrec": "ok",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  },
+  "sora2_demo.mp4": {
+   "strength": 2.5,
+   "identified": 10,
+   "control": "clean",
+   "psnr": 52.12,
+   "vmaf": 92.76,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "ok",
+    "screenrec": "ok",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  },
+  "sora_ant_pov.mp4": {
+   "strength": 1.5,
+   "identified": 10,
+   "control": "clean",
+   "psnr": 40.69,
+   "vmaf": 92.08,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "ok",
+    "screenrec": "ok",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  },
+  "sora_gold_rush.mp4": {
+   "strength": 1.5,
+   "identified": 10,
+   "control": "clean",
+   "psnr": 39.09,
+   "vmaf": 84.54,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "ok",
+    "screenrec": "ok",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  },
+  "sora_italian_pup.mp4": {
+   "strength": 2.5,
+   "identified": 10,
+   "control": "clean",
+   "psnr": 36.61,
+   "vmaf": 78.25,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "ok",
+    "screenrec": "ok",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  },
+  "veo2_clock.mp4": {
+   "strength": 3.0,
+   "identified": 9,
+   "control": "clean",
+   "psnr": 33.87,
+   "vmaf": 62.43,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "ok",
+    "screenrec": "MISS",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  },
+  "veo31_lemonade.mp4": {
+   "strength": 1.5,
+   "identified": 10,
+   "control": "clean",
+   "psnr": 35.77,
+   "vmaf": 86.4,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "ok",
+    "screenrec": "ok",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  },
+  "veo3_demo2.mp4": {
+   "strength": 1.5,
+   "identified": 10,
+   "control": "clean",
+   "psnr": 42.86,
+   "vmaf": 84.13,
+   "cells": {
+    "tiktok": "ok",
+    "reels": "ok",
+    "shorts": "ok",
+    "youtube": "ok",
+    "x": "ok",
+    "whatsapp": "ok",
+    "telegram": "ok",
+    "screenrec": "ok",
+    "tiktok_then_whatsapp": "ok",
+    "x_then_reels_then_whatsapp": "ok"
+   }
+  }
+ },
+ "previous_release": {
+  "release": "v2.2",
+  "identified": 124,
+  "total": 130
+ }
+}
