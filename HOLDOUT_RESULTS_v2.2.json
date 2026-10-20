@@ -1,0 +1,80 @@
+{
+ "set": "holdout-v1",
+ "release": "v2.2 (native-YUV embedding + adaptive strength)",
+ "identified": 124,
+ "total": 130,
+ "wrong_attributions": 0,
+ "false_positives": 0,
+ "per_clip": {
+  "borneo_wildlife.mp4": {
+   "strength": 2.5,
+   "identified": 10,
+   "control": "clean"
+  },
+  "cogvideox_swans.mp4": {
+   "strength": 2.5,
+   "identified": 10,
+   "control": "clean"
+  },
+  "dog_popcorn_vertical.mp4": {
+   "strength": 3.0,
+   "identified": 9,
+   "control": "clean"
+  },
+  "octopus_crab.mp4": {
+   "strength": 2.5,
+   "identified": 10,
+   "control": "clean"
+  },
+  "photoreal_train.mp4": {
+   "strength": 2.5,
+   "identified": 8,
+   "control": "clean"
+  },
+  "pigeon_vertical.mp4": {
+   "strength": 2.5,
+   "identified": 10,
+   "control": "clean"
+  },
+  "sora2_demo.mp4": {
+   "strength": 2.5,
+   "identified": 10,
+   "control": "clean"
+  },
+  "sora_ant_pov.mp4": {
+   "strength": 2.5,
+   "identified": 10,
+   "control": "clean"
+  },
+  "sora_gold_rush.mp4": {
+   "strength": 2.5,
+   "identified": 10,
+   "control": "clean"
+  },
+  "sora_italian_pup.mp4": {
+   "strength": 2.5,
+   "identified": 10,
+   "control": "clean"
+  },
+  "veo2_clock.mp4": {
+   "strength": 3.6,
+   "identified": 7,
+   "control": "clean"
+  },
+  "veo31_lemonade.mp4": {
+   "strength": 3.0,
+   "identified": 10,
+   "control": "clean"
+  },
+  "veo3_demo2.mp4": {
+   "strength": 2.5,
+   "identified": 10,
+   "control": "clean"
+  }
+ },
+ "previous_release": {
+  "release": "v2.1",
+  "identified": 120,
+  "total": 130
+ }
+}
