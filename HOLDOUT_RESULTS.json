@@ -1,0 +1,75 @@
+{
+ "set": "holdout-v1",
+ "seal": "SEAL.json (sha256 547ee4bb...; OpenTimestamps proof SEAL.json.ots)",
+ "identified": 120,
+ "total": 130,
+ "wrong_attributions": 0,
+ "false_positives": 0,
+ "per_clip": {
+  "borneo_wildlife.mp4": {
+   "identified": 10,
+   "wrong": 0,
+   "control": true
+  },
+  "cogvideox_swans.mp4": {
+   "identified": 10,
+   "wrong": 0,
+   "control": true
+  },
+  "dog_popcorn_vertical.mp4": {
+   "identified": 9,
+   "wrong": 0,
+   "control": true
+  },
+  "octopus_crab.mp4": {
+   "identified": 10,
+   "wrong": 0,
+   "control": true
+  },
+  "photoreal_train.mp4": {
+   "identified": 7,
+   "wrong": 0,
+   "control": true
+  },
+  "pigeon_vertical.mp4": {
+   "identified": 10,
+   "wrong": 0,
+   "control": true
+  },
+  "sora2_demo.mp4": {
+   "identified": 10,
+   "wrong": 0,
+   "control": true
+  },
+  "sora_ant_pov.mp4": {
+   "identified": 10,
+   "wrong": 0,
+   "control": true
+  },
+  "sora_gold_rush.mp4": {
+   "identified": 10,
+   "wrong": 0,
+   "control": true
+  },
+  "sora_italian_pup.mp4": {
+   "identified": 10,
+   "wrong": 0,
+   "control": true
+  },
+  "veo2_clock.mp4": {
+   "identified": 4,
+   "wrong": 0,
+   "control": true
+  },
+  "veo31_lemonade.mp4": {
+   "identified": 10,
+   "wrong": 0,
+   "control": true
+  },
+  "veo3_demo2.mp4": {
+   "identified": 10,
+   "wrong": 0,
+   "control": true
+  }
+ }
+}

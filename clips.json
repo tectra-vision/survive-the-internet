@@ -1,0 +1,162 @@
+[
+ {
+  "file": "veo3_cafe_man.mp4",
+  "source_title": "Grey Haired Man in a Cosy Cafe (Veo 3).webm",
+  "license": "Public domain",
+  "set": "evaluation",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Grey_Haired_Man_in_a_Cosy_Cafe_%28Veo_3%29.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "sora_tokyo_walk.mp4",
+  "source_title": "OpenAI Sora in Action- Tokyo Walk.webm",
+  "license": "Public domain",
+  "set": "evaluation",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/OpenAI_Sora_in_Action-_Tokyo_Walk.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "veo3_chernobyl.mp4",
+  "source_title": "Veo-3 animation example - Chernobyl decaying room.webm",
+  "license": "Public domain",
+  "set": "evaluation",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Veo-3_animation_example_-_Chernobyl_decaying_room.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "veo3_owl_badger.mp4",
+  "source_title": "Veo 3 demo Owl and Badger.webm",
+  "license": "Public domain",
+  "set": "evaluation",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Veo_3_demo_Owl_and_Badger.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "sora_mammoth.mp4",
+  "source_title": "Wooly Mammoth by OpenAI Sora.webm",
+  "license": "Public domain",
+  "set": "evaluation",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Wooly_Mammoth_by_OpenAI_Sora.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "birds_over_river.mp4",
+  "source_title": "Birds-over-river.webm",
+  "license": "Public domain",
+  "set": "evaluation",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Birds-over-river.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "cat_on_bed.mp4",
+  "source_title": "Cat-on-bed.webm",
+  "license": "Public domain",
+  "set": "evaluation",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Cat-on-bed.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "origami_undersea.mp4",
+  "source_title": "Origami-undersea.webm",
+  "license": "Public domain",
+  "set": "evaluation",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Origami-undersea.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "borneo_wildlife.mp4",
+  "source_title": "Borneo wildlife on the Kinabatangan River.webm",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Borneo_wildlife_on_the_Kinabatangan_River.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "6322351eb7a2045a96164b248b770a8d8139c6f9eee150436434411b2731d449",
+  "set": "holdout-v1"
+ },
+ {
+  "file": "veo2_clock.mp4",
+  "source_title": "Clock by Veo 2.webm",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Clock_by_Veo_2.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "21842e4e73d95e1a307611a9bf395216d63020dc86a098dc1234696b98c714e2",
+  "set": "holdout-v1"
+ },
+ {
+  "file": "veo3_demo2.mp4",
+  "source_title": "Googleveo3-2.webm",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Googleveo3-2.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "979bbf8480861ef67c92c6e07242caa0a8838694bfa60882e5eec3987324f124",
+  "set": "holdout-v1"
+ },
+ {
+  "file": "sora2_demo.mp4",
+  "source_title": "OpenAI - This is Sora 2.webm",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/OpenAI_-_This_is_Sora_2.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "961575d888ec146585eabbb19a07c9696c731cfe6b4124cf8ca6f7158b27dc6d",
+  "set": "holdout-v1"
+ },
+ {
+  "file": "sora_gold_rush.mp4",
+  "source_title": "OpenAI Sora in Action- Gold Rush.webm",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/OpenAI_Sora_in_Action-_Gold_Rush.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "cb8d149346d98c12cc326fcd87df2f12421c19f981876d21cb259c49f17ba6fb",
+  "set": "holdout-v1"
+ },
+ {
+  "file": "sora_italian_pup.mp4",
+  "source_title": "Open AI Sora in Action- Italian Pup.webm",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Open_AI_Sora_in_Action-_Italian_Pup.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "3ca45ecb9b3e933e972ae50710345ea8f1407982030ff4b99abc8cb5b0b2af97",
+  "set": "holdout-v1"
+ },
+ {
+  "file": "sora_ant_pov.mp4",
+  "source_title": "POV of an ant walking inside an ant nest tunnel (Sora AI-vid",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/POV_of_an_ant_walking_inside_an_ant_nest_tunnel_%28Sora_AI-video%29.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "6acc3549f91caad652bb62b80249a8222da891b641287927920e2c8618f56356",
+  "set": "holdout-v1"
+ },
+ {
+  "file": "photoreal_train.mp4",
+  "source_title": "Photoreal-train.webm",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Photoreal-train.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "9e1f461e6aada4877cf04156bd1114bfcea3b7a162c00e53c7431b61cf80cc2a",
+  "set": "holdout-v1"
+ },
+ {
+  "file": "veo31_lemonade.mp4",
+  "source_title": "Visual Kei Man Enjoys Lemonade (Veo 3.1).webm",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Visual_Kei_Man_Enjoys_Lemonade_%28Veo_3.1%29.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "fa27c5200f3701d5c3de98a4ade2183c80285f90f1aca2d5df0ffa2fa15a5898",
+  "set": "holdout-v1"
+ },
+ {
+  "file": "dog_popcorn_vertical.mp4",
+  "source_title": "Dog popcorn with audio 6781BD0C.webm",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Dog_popcorn_with_audio_6781BD0C.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "3d410a16ab88e16216054b3662aee7b2fff6eeac370398161240836be2627286",
+  "set": "holdout-v1"
+ },
+ {
+  "file": "cogvideox_swans.mp4",
+  "source_title": "Late Afternoon Swans (CogVideoX).webm",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Late_Afternoon_Swans_%28CogVideoX%29.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "266151ec6beef00fa8cc6ce22d557c82ebcffb1fbbc5a46838ab0e2fe248d4e6",
+  "set": "holdout-v1"
+ },
+ {
+  "file": "octopus_crab.mp4",
+  "source_title": "Octopus-and-crab.webm",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Octopus-and-crab.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "2b51a741e505d8327622fd8a2a98e3451f37aacb12ee26717dff9abe0e800e44",
+  "set": "holdout-v1"
+ },
+ {
+  "file": "pigeon_vertical.mp4",
+  "source_title": "Victoria-crowned-pigeon.webm",
+  "license": "Public domain",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Victoria-crowned-pigeon.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "source_sha256": "683edda1b6fc7c6ffc3714ac32b1587438c91b26056b3e86fcc04c925b329c95",
+  "set": "holdout-v1"
+ }
+]

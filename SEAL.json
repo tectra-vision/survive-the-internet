@@ -1,0 +1,130 @@
+{
+ "bench_script_sha256": "8ee2cbf332cf0aec26e5db20fb0a0c352c06bef6bfe9a438025feffc70037a48",
+ "clips": [
+  {
+   "file": "borneo_wildlife.mp4",
+   "license": "Public domain",
+   "orig_size": "1920x1088",
+   "prepared_sha256": "033614b188023093b98d62f571760994ab80b02f93c4a4f7f12928bd2c179e6b",
+   "source_sha256": "6322351eb7a2045a96164b248b770a8d8139c6f9eee150436434411b2731d449",
+   "source_title": "Borneo wildlife on the Kinabatangan River.webm",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Borneo_wildlife_on_the_Kinabatangan_River.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  {
+   "file": "veo2_clock.mp4",
+   "license": "Public domain",
+   "orig_size": "1280x720",
+   "prepared_sha256": "141a2af9fb92fdb21a411381fd69aa3423ce68f2476e0987ff05f8199d7bd3ca",
+   "source_sha256": "21842e4e73d95e1a307611a9bf395216d63020dc86a098dc1234696b98c714e2",
+   "source_title": "Clock by Veo 2.webm",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Clock_by_Veo_2.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  {
+   "file": "veo3_demo2.mp4",
+   "license": "Public domain",
+   "orig_size": "1920x1080",
+   "prepared_sha256": "1e3382f8511e41176519d73ae272cc85deaef9ac1933a5e184c9365a2e0beb79",
+   "source_sha256": "979bbf8480861ef67c92c6e07242caa0a8838694bfa60882e5eec3987324f124",
+   "source_title": "Googleveo3-2.webm",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Googleveo3-2.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  {
+   "file": "sora2_demo.mp4",
+   "license": "Public domain",
+   "orig_size": "1920x1080",
+   "prepared_sha256": "d6a913a7c65732bf475e91f976c2f5a0ad63a63dc48921aea0b28c2bbc8dbddc",
+   "source_sha256": "961575d888ec146585eabbb19a07c9696c731cfe6b4124cf8ca6f7158b27dc6d",
+   "source_title": "OpenAI - This is Sora 2.webm",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/OpenAI_-_This_is_Sora_2.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  {
+   "file": "sora_gold_rush.mp4",
+   "license": "Public domain",
+   "orig_size": "1280x720",
+   "prepared_sha256": "fb834db5c5b333bb6f968ffb484d58f1414e58f25bf8f08996f34c165d5cd447",
+   "source_sha256": "cb8d149346d98c12cc326fcd87df2f12421c19f981876d21cb259c49f17ba6fb",
+   "source_title": "OpenAI Sora in Action- Gold Rush.webm",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/OpenAI_Sora_in_Action-_Gold_Rush.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  {
+   "file": "sora_italian_pup.mp4",
+   "license": "Public domain",
+   "orig_size": "1920x1080",
+   "prepared_sha256": "c32fcd1db7309cc58803147992e493de031f56fc6ea125b3f7ea5c3f433361e6",
+   "source_sha256": "3ca45ecb9b3e933e972ae50710345ea8f1407982030ff4b99abc8cb5b0b2af97",
+   "source_title": "Open AI Sora in Action- Italian Pup.webm",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Open_AI_Sora_in_Action-_Italian_Pup.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  {
+   "file": "sora_ant_pov.mp4",
+   "license": "Public domain",
+   "orig_size": "1280x720",
+   "prepared_sha256": "21354dbc20052dafa23bfd8aec9461b4befb1c5086a1250b1bdf689d73f676d9",
+   "source_sha256": "6acc3549f91caad652bb62b80249a8222da891b641287927920e2c8618f56356",
+   "source_title": "POV of an ant walking inside an ant nest tunnel (Sora AI-vid",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/POV_of_an_ant_walking_inside_an_ant_nest_tunnel_%28Sora_AI-video%29.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  {
+   "file": "photoreal_train.mp4",
+   "license": "Public domain",
+   "orig_size": "1920x1080",
+   "prepared_sha256": "d0cdc4d5386ac5f00a933352ba1762265b8acf706773de2bad2fb4385eace0d4",
+   "source_sha256": "9e1f461e6aada4877cf04156bd1114bfcea3b7a162c00e53c7431b61cf80cc2a",
+   "source_title": "Photoreal-train.webm",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Photoreal-train.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  {
+   "file": "veo31_lemonade.mp4",
+   "license": "Public domain",
+   "orig_size": "1920x1088",
+   "prepared_sha256": "f69e3d4283ef03dfda880f4a389fba609f771c2046cdc3e2a63669c6ba182042",
+   "source_sha256": "fa27c5200f3701d5c3de98a4ade2183c80285f90f1aca2d5df0ffa2fa15a5898",
+   "source_title": "Visual Kei Man Enjoys Lemonade (Veo 3.1).webm",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Visual_Kei_Man_Enjoys_Lemonade_%28Veo_3.1%29.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  {
+   "file": "dog_popcorn_vertical.mp4",
+   "license": "Public domain",
+   "orig_size": "512x896",
+   "prepared_sha256": "fa287b81c5c91e1ff9a6354ee4043bd762c64d327444e92569d4aa421294868c",
+   "source_sha256": "3d410a16ab88e16216054b3662aee7b2fff6eeac370398161240836be2627286",
+   "source_title": "Dog popcorn with audio 6781BD0C.webm",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Dog_popcorn_with_audio_6781BD0C.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  {
+   "file": "cogvideox_swans.mp4",
+   "license": "Public domain",
+   "orig_size": "720x480",
+   "prepared_sha256": "9bad23a1722f215d9f1bd7d01b06b644562315731f1712f0de9385b71428f6cb",
+   "source_sha256": "266151ec6beef00fa8cc6ce22d557c82ebcffb1fbbc5a46838ab0e2fe248d4e6",
+   "source_title": "Late Afternoon Swans (CogVideoX).webm",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Late_Afternoon_Swans_%28CogVideoX%29.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  {
+   "file": "octopus_crab.mp4",
+   "license": "Public domain",
+   "orig_size": "512x512",
+   "prepared_sha256": "eb20e708328e1c8109cbe9d3701d1225d42346e8b5fdfcb748a0db8485aff307",
+   "source_sha256": "2b51a741e505d8327622fd8a2a98e3451f37aacb12ee26717dff9abe0e800e44",
+   "source_title": "Octopus-and-crab.webm",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Octopus-and-crab.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  {
+   "file": "pigeon_vertical.mp4",
+   "license": "Public domain",
+   "orig_size": "720x1280",
+   "prepared_sha256": "67184fe03d9c9d8537c7678da5ec1a2a933b108b7e6788fd48afa28143b9e7f8",
+   "source_sha256": "683edda1b6fc7c6ffc3714ac32b1587438c91b26056b3e86fcc04c925b329c95",
+   "source_title": "Victoria-crowned-pigeon.webm",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Victoria-crowned-pigeon.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  }
+ ],
+ "code_commit": "16b17ad3ba220bd22f0d49871e7f3cbfec81c6ab",
+ "created_utc": "2026-10-20T04:22:08Z",
+ "engine_sha256": "b536b8a6750dd66500af6454f5a797a910fd29fe38681e843e359c0ccb1c651d",
+ "name": "Tectra sealed holdout v1",
+ "pipeline_sha256": "e37f673eda8f9033a870e383193561811e59ed4399544cc6f74474e0109b73e0",
+ "platforms_sha256": "5a8ebd31c4506a12ae642fcab3a8d774749a3ad59dd40cae3a8fd19d6cba1e4c",
+ "rule": "These clips were never used for tuning or prior evaluation. Results are reported once, with the engine and pipelines fixed below; no parameter changes after unsealing.",
+ "success_criterion": "correct mark AND correct customer returned, vs a 99,000-ID / 3-customer registry, 1e-6 wrong-attribution budget; unmarked originals must not match"
+}

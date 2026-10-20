@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Survive the Internet: a benchmark for video watermarks"
+message: "If you use this benchmark, please cite it."
+authors:
+  - name: "Tectra LLC"
+version: "1.0"
+date-released: "2026-10-20"
+url: "https://tectra.vision/benchmarks"
+license: MIT
