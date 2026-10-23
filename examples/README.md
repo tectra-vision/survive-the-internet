@@ -34,7 +34,7 @@ python verify_receipt.py check.receipt.json --video signed.mp4 \
   --original signed.mp4 --key EXPECTED_PUBLIC_KEY_HEX
 ```
 
-`--video` checks which file the receipt describes. `--original` separately compares a supplied file with the registered delivered-file commitment; it requires a log-v2 receipt. Legacy v1 receipts cannot authenticate that original. A record awaiting batch inclusion cannot yet pass the full proof. A missing receipt, unsupported binding or failed signature is not successful authentication.
+`--video` checks which file the receipt describes. `--original` separately compares a supplied file with the registered delivered-file commitment; it requires a log-v2 receipt. Legacy v1 receipts cannot authenticate that original. Log maintenance runs periodically and batches are normally sealed hourly, so a new record may not be ready immediately. Obtain a fresh check receipt after inclusion; the saved pending receipt does not update itself. A missing receipt, pending proof, unsupported binding or failed signature is not successful authentication.
 
 Read the individual results. An independently verified receipt does not replay watermark detection, and a skipped or pending Bitcoin timestamp is not a confirmed timestamp. The current signing key and instructions are on the [transparency page](https://tectra.vision/transparency).
 

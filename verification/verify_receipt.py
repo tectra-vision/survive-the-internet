@@ -122,7 +122,10 @@ def main():
     else:
         print("  skip  2 file hash (no --video given)")
 
-    P, res = st["proof"], st["result"]
+    P, res = st.get("proof"), st["result"]
+    if not isinstance(P, dict):
+        check("3 registration proof", False, "not available yet; obtain a fresh receipt after the registration log is updated")
+        return sys.exit(1)
     mid = int(P["mark_id"], 16)
     commit = bytes.fromhex(P["commitment"])
     if P.get("opening"):

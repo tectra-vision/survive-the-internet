@@ -1,4 +1,6 @@
 import importlib.util
+import contextlib
+import io
 from pathlib import Path
 import tempfile
 import unittest
@@ -95,6 +97,18 @@ class WorkflowTests(unittest.TestCase):
         output=self.root/'check.json'
         api.check(self.source, output)
         self.assertTrue(output.with_suffix('.receipt.json').exists())
+
+    def test_cli_handles_a_pending_registration_proof(self):
+        api, _ = self.client([Response({'found':True,'receipt':{'statement':{'proof':None}}})])
+        output=self.root/'pending-check.json'
+        text=io.StringIO()
+        with patch.object(api_example, 'TectraAPI', return_value=api), \
+             patch.object(api_example.sys, 'argv', ['example', 'check', str(self.source), '--out', str(output)]), \
+             contextlib.redirect_stdout(text):
+            code=api_example.main()
+        self.assertEqual(code,0)
+        self.assertIn('Registration proof is pending',text.getvalue())
+        self.assertNotIn('exact original verified',text.getvalue())
 
     def test_redirect_is_rejected_without_a_second_request(self):
         api, session = self.client([Response(status=302)])

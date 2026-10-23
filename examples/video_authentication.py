@@ -164,9 +164,13 @@ def main():
             receipt = result.get("receipt")
             if receipt:
                 print(f"Receipt saved: {args.out.with_suffix('.receipt.json')}")
-                version = receipt.get("statement", {}).get("proof", {}).get("log_version", 1)
-                if version != 2:
+                proof = (receipt.get("statement") or {}).get("proof")
+                if not proof:
+                    print("NOTICE: Registration proof is pending. Obtain a fresh receipt after the log is updated.")
+                elif proof.get("log_version", 1) != 2:
                     print("NOTICE: This receipt does not supply the current exact-file binding.")
+                elif not proof.get("batch"):
+                    print("NOTICE: Batch inclusion is pending; the full receipt proof cannot pass yet.")
                 print("Authenticate the receipt separately with verify_receipt.py and an expected signing key.")
             else:
                 print("NOTICE: No signed receipt returned; there is no receipt to authenticate.")

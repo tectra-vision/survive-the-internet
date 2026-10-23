@@ -79,6 +79,16 @@ class ExactFileTests(unittest.TestCase):
         code,_=self.run_verifier(self.receipt(1),original=False)
         self.assertEqual(code,0)
 
+    def test_pending_proof_is_reported_as_unavailable(self):
+        receipt=self.receipt(2)
+        receipt['statement']['proof']=None
+        receipt['signature']=base64.b64encode(self.key.sign(json.dumps(receipt['statement'],sort_keys=True,separators=(',',':')).encode()).signature).decode()
+        code,output=self.run_verifier(receipt)
+        self.assertEqual(code,1)
+        self.assertIn('PASS  1 signature',output)
+        self.assertIn('registration proof',output)
+        self.assertIn('not available yet',output)
+
     def test_altered_commitment_fails_signature_validation(self):
         receipt=copy.deepcopy(self.receipt(2))
         receipt['statement']['proof']['content']['delivered_sha256']='0'*64
