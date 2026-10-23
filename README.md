@@ -1,6 +1,6 @@
-# Survive the Internet: video provenance that survives sharing
+# Tectra: Your video. Your signature.
 
-**AI video labels fall off. This watermark doesn't.**
+**Watermark any video, verify the original, and trace every copy back to you.**
 
 Since 2 August 2026, the EU AI Act (Article 50) requires AI-generated video to carry a machine-readable, robust mark. Most labels today are metadata, and metadata rarely survives a re-upload: when we uploaded a C2PA-signed AI video to YouTube, YouTube replaced the manifest and the "AI-generated" declaration was gone.
 
