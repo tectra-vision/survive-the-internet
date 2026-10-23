@@ -1,8 +1,10 @@
-# Tectra video authentication: examples and benchmark
+# Survive the Internet: video provenance that survives sharing
 
-**Sign your videos. Make them verifiable.**
+**AI video labels fall off. This watermark doesn't.**
 
-Tectra lets camera companies, AI video platforms and creators register videos, verify exact original files and identify registered copies after supported sharing changes.
+Since 2 August 2026, the EU AI Act (Article 50) requires AI-generated video to carry a machine-readable, robust mark. Most labels today are metadata, and metadata rarely survives a re-upload: when we uploaded a C2PA-signed AI video to YouTube, YouTube replaced the manifest and the "AI-generated" declaration was gone.
+
+[Tectra](https://tectra.vision) puts a mark in the picture and registers who made the video, so copies that were re-encoded, reframed to 9:16 or forwarded through WhatsApp can still be traced back to their source. This repository holds the open benchmark harness, the current API example, the receipt verifier and the published profile evidence.
 
 ## Start here
 
