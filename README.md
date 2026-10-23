@@ -1,21 +1,35 @@
-# Survive the Internet: a benchmark for video watermarks
+# Tectra video authentication: examples and benchmark
 
-Most watermark benchmarks apply synthetic distortions (JPEG quality, Gaussian noise, rotation). AI video doesn't get attacked that way. It gets **posted**: letterboxed into 9:16 by TikTok and Reels, re-encoded to VP9 by YouTube, crushed by WhatsApp, screen-recorded, and re-shared across platforms.
+**Sign your videos. Make them verifiable.**
 
-This benchmark measures exactly that, on **real AI-generated video**.
+Tectra lets camera companies, AI video platforms and creators register videos, verify exact original files and identify registered copies after supported sharing changes.
 
-## What's in it
+## Start here
 
-| | |
-|---|---|
-| **Clips** | 21 public-domain AI videos from Wikimedia Commons (OpenAI Sora and Sora 2, Google Veo 2/3/3.1, CogVideoX and others), including vertical and square formats. `clips.json` lists sources, licences and SHA-256 hashes. |
-| **Sets** | `evaluation` (8 clips) and `holdout-v1` (13 clips, sealed and Bitcoin-timestamped *before* first use; see `SEAL.json` and `SEAL.json.ots`). |
-| **Pipelines** | 10 named, versioned ffmpeg reproductions of platform processing (`platforms.py`): TikTok, Reels, Shorts, YouTube, X, WhatsApp, Telegram, phone screen-recording, and two multi-hop re-share chains. |
-| **Metric** | **Identification rate**: the exact embedded ID is returned. Not bit accuracy. |
-| **Controls** | Every unmarked original is pushed through every pipeline and must return nothing (false positives reported). |
-| **Quality** | PSNR and SSIM of marked vs. original, reported next to robustness. |
+- [Working Python example](examples/README.md): sign an export through the current hosted API, save the report, check a copy and retain its available receipt.
+- [Receipt verifier](verification/README.md): authenticate a signed receipt and, for a log-v2 record, compare an exact original file.
+- [Watch and download samples](https://tectra.vision/benchmarks), [get an API key](https://tectra.vision/developers), or [try the public checker](https://tectra.vision/check).
 
-## Run it on your watermark
+A watermark identifies a registration. It can remain on edited content. Exact-file verification uses the committed file fingerprint and a signed record; ordinary compression may break that exact match. No mark found does not classify a video as human-made. Reliable shared-copy tamper localization remains research.
+
+## Current product results
+
+The current profile evidence is a **post-fix re-evaluation of 28 source videos under 15 simulated transformations**. These are ffmpeg simulations, not live platform uploads. The same holdout was re-used after an export defect was fixed; this is not a fresh untouched test.
+
+| Profile | Source videos delivered | Correctly identified copies | Mean VMAF | Single worst second |
+|---|---:|---:|---:|---:|
+| Standard | 28/28 | 420/420 | 80.5 | 67.2 |
+| Maximum quality | 27/28 | 317/405 (78.3%) | 96.8 | 93.9 |
+
+No wrong-owner credits among the 825 marked copies; no credits among 1,245 unmarked or unregistered-owner copies. These observations do not establish a one-in-a-million service error rate.
+
+Standard prioritizes identification and can be visible. Maximum quality refused one video below its quality floor. Of its 27 delivered files, 12 failed the separate robustness self-test; customers see that result at marking time. It is weaker after screen recording and repeated sharing. VMAF estimates quality against an unmarked export; it is not a blinded viewing test.
+
+The [full method and platform table](https://tectra.vision/benchmarks/methodology), [raw evidence archive](https://tectra.vision/evidence/tectra-profile-evidence-2026-10-23.zip), [machine-readable summary](results/profile-summary-2026-10-23.json) and [whitepaper](https://tectra.vision/tectra-whitepaper.pdf) disclose the scope and corrections.
+
+## Reusable benchmark harness
+
+The original open benchmark harness is retained here for testing other watermark implementations. Its 21-clip manifest, `evaluation` / `holdout-v1` sets and **10** versioned simulation pipelines are historical and do **not** reproduce the newer 28-source / 15-transformation product table above. That table is supported by the separately published raw profile evidence. Keep these datasets and protocols distinct.
 
 ```bash
 pip install imageio-ffmpeg numpy opencv-python-headless
@@ -23,33 +37,23 @@ python fetch_clips.py
 python run_benchmark.py adapters/your_adapter.py --set all
 ```
 
-An adapter is two functions; `adapters/videoseal_adapter.py` is a worked example for Meta's open-source Video Seal:
+An adapter supplies two functions:
 
 ```python
-def embed(src_path: str, dst_path: str) -> str: ...      # returns the embedded ID
-def detect(path: str) -> str | None: ...                 # returns the ID found, or None
+def embed(src_path: str, dst_path: str) -> str: ...
+def detect(path: str) -> str | None: ...
 ```
 
-Please report the false-attribution budget your `detect()` is calibrated to, plus PSNR and SSIM.
+`adapters/videoseal_adapter.py` is a historical integration example. Check the model's code and weight licences before use. This repository does not publish a current superiority comparison against Video Seal.
 
-## Published results
+Report exact-ID identification, false attributions, operating thresholds and image quality together. Simulated pipelines are versioned; [FIELD_PROTOCOL.md](FIELD_PROTOCOL.md) describes real uploads and returned-file checks.
 
-| System | Identified (evaluation + platform sets) | False positives | PSNR |
-|---|---|---|---|
-| Tectra v2.3 (sealed holdout-v1)* | 128/130 (98.5%) | 0 | 39.0 dB (VMAF 82.2, range 61–93) |
-| Tectra v2.2 (sealed holdout-v1) | 124/130 (95.4%) | 0 | 37.0 dB (VMAF 75.2) |
-| Meta Video Seal v1.0 (default strength) | 36/50 on 5 clips × 10 pipelines | 0 | 42.2 dB |
+## Historical results and corrections
 
-## Known issues in holdout-v1
+[HISTORICAL_RESULTS.md](HISTORICAL_RESULTS.md) preserves the earlier v2.2/v2.3 tables, the five-clip Video Seal experiment and known holdout-v1 contamination/calibration issues. Those results are not the current profiles. Pre-fix v2.4/v2.5 detection and quality figures are withdrawn. The [current corrections register](https://tectra.vision/benchmarks/methodology#method-and-disclosures) explains the export defect and re-evaluation.
 
-*v2.3: the first run scored 118/130 because one clip failed from a calibration bug; the bug was diagnosed on that clip and fixed before the 128/130 re-run, so that figure is not a fully clean held-out result. The next release will use a newly sealed holdout-v2.
+## Licences and support
 
+Benchmark code, the API example and published verifier in this repository use the [MIT licence](LICENSE). Media licences are recorded in `clips.json` and must be checked at each source. Access to the hosted service requires a workspace/API key and is subject to its terms and quotas. Publishing these tools does not publish or license Tectra's hosted watermark engine.
 
-one sealed-test clip (“Borneo wildlife”) turned out to be a duplicate upload of a development clip (“Birds over river”) on Wikimedia Commons; our fingerprint index found it. Excluding it, the sealed result is 118/120 (98.3%) for v2.3 and 114/120 (95.0%) for v2.2. Holdout v2 will exclude near-duplicates automatically.
-
-## Limits
-
-- Pipelines **reproduce** platform processing from published specs; they are not live uploads. A field protocol (post → download → check) is in `FIELD_PROTOCOL.md`.
-- Platforms change their encoders; pipelines are versioned (`v1`), and new versions are added rather than edited.
-
-Licence: benchmark code MIT; clips are public domain (see each source page). Maintained by Tectra (tectra.vision).
+The archived `sdk-ts` / `tectra-verify` repositories and the legacy `tectravision-sdk` package do not implement the current measured video pipeline. Start new integrations with the example above. Customer-hosted marking is restricted and requires a separate arrangement.

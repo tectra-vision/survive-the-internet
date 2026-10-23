@@ -1,0 +1,169 @@
+{
+  "evaluation": "holdout-v2 post-fix re-evaluation",
+  "fresh_untouched_holdout": false,
+  "independent_sources": 28,
+  "limits": [
+    "Variants of one source are correlated, not independent trials.",
+    "Quality is measured against an unmarked export; VMAF is not a blinded viewing result.",
+    "Results describe the pinned experiment; they are not a guarantee for every service output.",
+    "No shared-copy integrity claim follows from watermark detection."
+  ],
+  "negative_controls": {
+    "copies": 1245,
+    "credited": 0,
+    "families": {
+      "null_unmarked": 420,
+      "owner_not_registered": 825
+    }
+  },
+  "platforms": "simulated, not live uploads",
+  "profiles": {
+    "maxq": {
+      "copies": 405,
+      "correct": 317,
+      "self_test_passes": 15,
+      "single_worst_second": 93.87,
+      "sources_attempted": 28,
+      "sources_delivered": 27,
+      "transformations": {
+        "crop60_centre": {
+          "copies": 27,
+          "correct": 24
+        },
+        "crop70_offcentre": {
+          "copies": 27,
+          "correct": 24
+        },
+        "crop80": {
+          "copies": 27,
+          "correct": 25
+        },
+        "crop_mirror_480p": {
+          "copies": 27,
+          "correct": 23
+        },
+        "mirror": {
+          "copies": 27,
+          "correct": 27
+        },
+        "reels": {
+          "copies": 27,
+          "correct": 21
+        },
+        "screenrec": {
+          "copies": 27,
+          "correct": 14
+        },
+        "shorts": {
+          "copies": 27,
+          "correct": 22
+        },
+        "telegram": {
+          "copies": 27,
+          "correct": 24
+        },
+        "tiktok": {
+          "copies": 27,
+          "correct": 21
+        },
+        "tiktok_then_whatsapp": {
+          "copies": 27,
+          "correct": 8
+        },
+        "whatsapp": {
+          "copies": 27,
+          "correct": 25
+        },
+        "x": {
+          "copies": 27,
+          "correct": 26
+        },
+        "x_then_reels_then_whatsapp": {
+          "copies": 27,
+          "correct": 7
+        },
+        "youtube": {
+          "copies": 27,
+          "correct": 26
+        }
+      },
+      "vmaf_mean": 96.79,
+      "wrong": 0
+    },
+    "standard": {
+      "copies": 420,
+      "correct": 420,
+      "self_test_passes": 28,
+      "single_worst_second": 67.23,
+      "sources_attempted": 28,
+      "sources_delivered": 28,
+      "transformations": {
+        "crop60_centre": {
+          "copies": 28,
+          "correct": 28
+        },
+        "crop70_offcentre": {
+          "copies": 28,
+          "correct": 28
+        },
+        "crop80": {
+          "copies": 28,
+          "correct": 28
+        },
+        "crop_mirror_480p": {
+          "copies": 28,
+          "correct": 28
+        },
+        "mirror": {
+          "copies": 28,
+          "correct": 28
+        },
+        "reels": {
+          "copies": 28,
+          "correct": 28
+        },
+        "screenrec": {
+          "copies": 28,
+          "correct": 28
+        },
+        "shorts": {
+          "copies": 28,
+          "correct": 28
+        },
+        "telegram": {
+          "copies": 28,
+          "correct": 28
+        },
+        "tiktok": {
+          "copies": 28,
+          "correct": 28
+        },
+        "tiktok_then_whatsapp": {
+          "copies": 28,
+          "correct": 28
+        },
+        "whatsapp": {
+          "copies": 28,
+          "correct": 28
+        },
+        "x": {
+          "copies": 28,
+          "correct": 28
+        },
+        "x_then_reels_then_whatsapp": {
+          "copies": 28,
+          "correct": 28
+        },
+        "youtube": {
+          "copies": 28,
+          "correct": 28
+        }
+      },
+      "vmaf_mean": 80.53,
+      "wrong": 0
+    }
+  },
+  "publication": "2026-10-23",
+  "source_commit": "229b11395f277b06e464352a3f65e535a36deb04",
+  "transformations_per_delivered_source": 15
+}
